@@ -1,0 +1,354 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lora', serif; /* Elegant serif font for body text */
+}
+
+body {
+  background-color: #e0f7fa; /* Soft light cyan background for a fresh feel */
+  color: #333; /* Dark text for good contrast */
+  font-family: 'Lora', serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #b0bec5; /* Subtle gray border */
+}
+
+.logo span {
+  font-size: 32px;
+  color: #01579b; /* Dark blue for the logo */
+  font-weight: bold;
+  background-color: #00bcd4; /* Bright cyan background */
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif; /* Clean sans-serif for logo */
+}
+
+/* Hero Section Styles */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  gap: 40px;
+}
+
+/* Left Section (Text Content) */
+.left-section {
+  max-width: 600px;
+}
+
+.text-content h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: #01579b;
+  font-family: 'Poppins', sans-serif; /* For prominent headings */
+}
+
+.text-content .name {
+  font-size: 60px;
+  font-weight: bold;
+  color: #ff6f00; /* Vibrant orange for emphasis */
+}
+
+.text-content h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #01579b;
+}
+
+.text-content span {
+  color: #ff6f00;
+}
+
+.text-content p {
+  margin-bottom: 25px;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #4f4f4f;
+}
+
+/* Text Boxes */
+.text-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.text-box {
+  background-color: #ff6f00; /* Vibrant orange for text boxes */
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.3s ease;
+  color: white;
+  font-family: 'Lora', serif;
+}
+
+.text-box .description {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  color: #333;
+}
+
+.text-box:hover {
+  margin-bottom: 60px;
+}
+
+.text-box:hover .description {
+  display: block;
+}
+
+/* Minimalist Button */
+.minimalist-button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+.minimalist-button:hover {
+  background-color: #ffffff;
+  color: #ff6f00;
+}
+
+/* Right Section (Image Content) */
+.right-section {
+  text-align: center;
+}
+
+/* Image Wrapper for Double Background Box */
+.image-wrapper {
+  position: relative;
+  width: 420px;
+  margin: 0 auto;
+}
+
+.background-box {
+  position: absolute;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+/* Large Box (Outer) */
+.large-box {
+  width: 75%;
+  height: 75%;
+  background-color: #00bcd4; /* Light cyan */
+  top: 180px;
+  left: 100px;
+  z-index: 0;
+}
+
+/* Small Box (Inner) */
+.small-box {
+  width: 72%;
+  height: 68%;
+  background-color: #e0f7fa; /* Light cyan */
+  top: 90px;
+  left: 65px;
+  margin: auto;
+  z-index: 1;
+}
+
+/* Image Styling */
+.image-content img {
+  width: 100%;
+  margin-top: 0px;
+  border-radius: 15px;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s;
+}
+
+.image-content img:hover {
+  transform: scale(1.1);
+}
+
+/* Projects Section */
+#projects-section {
+  padding: 50px 20px;
+  margin-top: 50px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#projects-section h2 {
+  font-size: 40px;
+  color: #01579b;
+  margin-bottom: 25px;
+}
+
+#projects-section p {
+  font-size: 18px;
+  color: #666;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.image-box {
+  flex: 1;
+  text-align: center;
+}
+
+.image-box img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.image-box img:hover {
+  transform: scale(1.05);
+}
+
+.image-box p {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* About Section */
+#about-section {
+  padding: 50px 20px;
+  margin-top: 50px;
+  background-color: #00bcd4;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#about-section h2 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+#about-section p {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* Skills Section */
+#skills-section {
+  padding: 50px 20px;
+  margin-top: 50px;
+  background-color: #ffcc80; /* Soft orange-yellow */
+  border-radius: 15px;
+  text-align: center;
+}
+
+#skills-section h2 {
+  font-size: 40px;
+  color: #01579b;
+  margin-bottom: 20px;
+}
+
+#skills-section p {
+  font-size: 18px;
+  color: #666;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill {
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #ff6f00;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  background-color: #00bcd4; /* Cyan on hover */
+}
+
+
+/* Contact Section */
+.contact {
+  background-color: #f7f7f7;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.contact h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  font-family: 'Lora', serif;
+  color: #666;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.contact-container a {
+  color: #fcae4b; /* Matching the theme color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-container a:hover {
+  text-decoration: underline;
+}
+
+
+
+footer {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
